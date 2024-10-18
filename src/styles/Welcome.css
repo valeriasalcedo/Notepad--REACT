@@ -7,14 +7,47 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5; 
+    width: 100vw; /* Asegura que el contenedor abarque todo el ancho de la pantalla */
+    background-color: #f5f5f5;
     font-family: 'Roboto', sans-serif;
     background-color: transparent;
     background-image: radial-gradient(#afafaf 1px, #ffffff 1px);
     background-size: 50px 50px;
+    overflow: visible; /* Asegura que el contenido no se recorte */
+}
 
-  }
-  
+.app-name {
+    color: #d1c4e9; 
+    font-size: 15vw; 
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 180px;
+    font-style: italic;
+    font-family: 'League Gothic', sans-serif;
+    line-height: 1;
+    font-weight: 550;
+    background: linear-gradient(90deg, #d1c4e9, #b39ddb, #9575cd, #7e57c2, #b39ddb, #d1c4e9);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s ease-in-out infinite;
+    white-space: nowrap; 
+    overflow: visible; 
+    width: 100vh; 
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
 
 
 .welcome-title {
@@ -27,19 +60,8 @@
     line-height: 1;
 }
 
-.app-name {
-    color: #d1c4e9; 
-    font-size: 225px;
-    padding: 0;
-    margin: 0;
-    font-style: italic;
-    font-family: 'League Gothic', sans-serif;
-    line-height: 1;
-    font-weight: 550;
-}
-
 .login, .register {
-    color: #d9d9d9; 
+    color: #b0bec5;
     font-size: 25px;
     font-weight: 400;
     padding: 0;
@@ -50,7 +72,7 @@
 }
 
 .link-login, .link-register {
-    color: #d1c4e9; 
+    color: #d1c4e9;
     text-decoration: none;
     font-size: 15px;
     text-align: center;
@@ -62,7 +84,6 @@
     text-decoration: underline;
 }
 
-/* Estilo del botón */
 button {
     font-size: 18px;
     color: #e1e1e1;
