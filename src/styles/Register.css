@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  background-image: radial-gradient(#dcdcdc 1px, #ffffff 1px);
+  background-size: 40px 40px;
+}
+
+.register-container {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.register-title {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 2.5rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.register-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #7e57c2;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(126, 87, 194, 0.5);
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #9575cd, #7e57c2);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.register-button:hover {
+  background: linear-gradient(90deg, #7e57c2, #9575cd);
+  transform: translateY(-3px);
+}
+
+.register-link {
+  margin-top: 15px;
+  display: inline-block;
+  color: #7e57c2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #5d3ea7;
+}
+
+.register-error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}

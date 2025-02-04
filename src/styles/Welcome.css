@@ -1,125 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.full-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw; /* Asegura que el contenedor abarque todo el ancho de la pantalla */
-    background-color: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
-    background-color: transparent;
-    background-image: radial-gradient(#afafaf 1px, #ffffff 1px);
-    background-size: 50px 50px;
-    overflow: visible; /* Asegura que el contenido no se recorte */
+.welcome-full-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  background-image: radial-gradient(#afafaf 1px, #ffffff 1px);
+  background-size: 50px 50px;
+  overflow: visible;
 }
 
-.app-name {
-    color: #d1c4e9; 
-    font-size: 15vw; 
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 180px;
-    font-style: italic;
-    font-family: 'League Gothic', sans-serif;
-    line-height: 1;
-    font-weight: 550;
-    background: linear-gradient(90deg, #d1c4e9, #b39ddb, #9575cd, #7e57c2, #b39ddb, #d1c4e9);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientShift 5s ease-in-out infinite;
-    white-space: nowrap; 
-    overflow: visible; 
-    width: 100vh; 
+.welcome-app-name {
+  color: #d1c4e9;
+  font-size: 15vw;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 180px;
+  font-style: italic;
+  font-family: 'League Gothic', sans-serif;
+  line-height: 1;
+  font-weight: 550;
+  background: linear-gradient(90deg, #d1c4e9, #b39ddb, hsl(262, 47%, 63%), #7e57c2, #b39ddb, #d1c4e9);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: welcome-gradientShift 5s ease-in-out infinite;
+  white-space: nowrap;
+  overflow: visible;
+  width: 100vh;
 }
 
-@keyframes gradientShift {
-    0% {
-        background-position: 0%;
-    }
-    50% {
-        background-position: 100%;
-    }
-    100% {
-        background-position: 0%;
-    }
+@keyframes welcome-gradientShift {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
-
 
 .welcome-title {
-    color: #b0bec5;
-    font-size: 100px;
-    padding: 0;
-    margin: 0;
-    font-weight: lighter;
-    font-style: italic;
-    line-height: 1;
+  color: #b0bec5;
+  font-size: 100px;
+  padding: 0;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1;
+  margin-left: 150px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.login, .register {
-    color: #b0bec5;
-    font-size: 25px;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    line-height: 1;
-    font-style: italic;
+.welcome-login,
+.welcome-register {
+  color: #b0bec5;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+  font-style: italic;
 }
 
-.link-login, .link-register {
-    color: #d1c4e9;
-    text-decoration: none;
-    font-size: 15px;
-    text-align: center;
-    margin: 0;
-    font-weight: bold;
+.welcome-link-login,
+.welcome-link-register {
+  color: #d1c4e9;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
 }
 
-.link:hover {
-    text-decoration: underline;
+.welcome-link-login:hover,
+.welcome-link-register:hover {
+  text-decoration: underline;
 }
 
 button {
-    font-size: 18px;
-    color: #e1e1e1;
-    font-family: inherit;
-    font-weight: 800;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
 }
 
 button:focus,
 button:hover {
-    color: #5d2b75;
+  color: #5d2b75;
 }
 
 button:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #4d5155;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #4d5155;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
 button:focus:after,
 button:hover:after {
-    width: 100%;
-    left: 0%;
+  width: 100%;
+  left: 0%;
 }

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  background-image: radial-gradient(#dcdcdc 1px, #ffffff 1px);
+  background-size: 40px 40px;
+}
+
+.login-container {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+  font-style: italic;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 3rem;
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  background: linear-gradient(90deg, #d1c4e9, #b39ddb, #9575cd, #7e57c2, #b39ddb, #d1c4e9);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: login-gradientShift 5s ease-in-out infinite;
+  white-space: nowrap;
+  overflow: visible;
+}
+@keyframes login-gradientShift {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+.login-input {
+  width: 100%;
+  padding: 15px 0px 18px;
+  margin: 10px 0px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #acacac;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(201, 138, 231, 0.5);
+}
+
+.login-button {
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  color:#7e57c2;
+  font-size: 25px;
+  padding-top: 10px;
+  margin: 0;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-3px);
+}
+
+.login-link {
+  margin-top: 15px;
+  display: inline-block;
+  color: #7e57c2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #5d3ea7;
+}
+
+.login-error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
