@@ -26,9 +26,9 @@ const Login = () => {
   return (
     <div className="login-wrapper">
       <div className="login-container">
-        <h1 className="login-title">login</h1>
+        <p className="login-p">Welcome back! Please log in to your account.</p>
         <input
-          className="login-input"
+          className="login-input-email"
           type="email"
           placeholder="Email address"
           onChange={(e) => setEmail(e.target.value)}

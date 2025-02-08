@@ -27,7 +27,8 @@ const Register = () => {
   return (
     <div className="register-wrapper">
       <div className="register-container">
-        <h1 className="register-title">Create Account</h1>
+        <p className="register-p">Get started with our app!<br />
+           Just create an account and enjoy the experience</p>
         <input
           className="register-input"
           type="text"
@@ -48,7 +49,7 @@ const Register = () => {
         />
         <button className="register-button" onClick={handleRegister}>
           Sign In
-        </button>
+        </button><br />
         <a
           className="register-link"
           onClick={() => navigate("/login")}
